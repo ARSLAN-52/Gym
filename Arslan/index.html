@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WellnessHub - Complete Health Tracker for monitoring meals, water, exercise, sleep, and wellness goals.">
+    <meta name="keywords" content="health tracker, wellness, fitness, nutrition, sleep, exercise">
+    <meta name="author" content="WellnessHub">
+    <title>WellnessHub | Complete Health Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Landing Page Section -->
+    <div id="landingPage">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo"><i class="fas fa-heartbeat"></i> WellnessHub</div>
+                    <ul class="nav-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" onclick="showAuthPage()">Start Free</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Transform Your Health Journey</h1>
+                        <p>Track workouts, monitor nutrition, and achieve wellness goals with AI-powered insights.</p>
+                        <div class="hero-buttons">
+                            <a href="#" class="btn btn-white" onclick="showAuthPage()">Get Started</a>
+                            <a href="#features" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=600" alt="Fitness" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Everything You Need</h2>
+                    <p>Comprehensive tools for your fitness journey</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-dumbbell"></i></div>
+                        <h3>Workout Tracking</h3>
+                        <p>Log exercises and track your progress with detailed analytics.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                        <h3>Meal Planning</h3>
+                        <p>Smart nutrition tracking with personalized meal suggestions.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                        <h3>Sleep Monitor</h3>
+                        <p>Analyze your sleep quality and get better rest recommendations.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Progress Analytics</h3>
+                        <p>Visualize your journey with detailed charts and insights.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                        <h3>Health Monitoring</h3>
+                        <p>Track vital signs and overall wellness metrics daily.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Mobile Friendly</h3>
+                        <p>Access your health data anywhere, anytime on any device.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Transform Your Health?</h2>
+                    <p>Join millions of users who have already taken control of their wellness journey.</p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-primary" onclick="showAuthPage()">Start Your Journey</a>
+                        <a href="#features" class="btn btn-outline">Explore Features</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item"><h3>1M+</h3><p>Active Users</p></div>
+                    <div class="stat-item"><h3>50M+</h3><p>Workouts Logged</p></div>
+                    <div class="stat-item"><h3>4.9★</h3><p>App Rating</p></div>
+                    <div class="stat-item"><h3>150+</h3><p>Countries</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What Our Users Say</h2>
+                    <p>Join thousands of satisfied users achieving their health goals</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"WellnessHub has completely transformed how I approach my health. The comprehensive tracking features keep me motivated and on track."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SM</div>
+                            <div class="author-info">
+                                <h4>Sarah Mitchell</h4>
+                                <p>Fitness Enthusiast</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The sleep tracking and mood monitoring have helped me understand my wellness patterns better. Highly recommend!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">JD</div>
+                            <div class="author-info">
+                                <h4>James Davis</h4>
+                                <p>Wellness Coach</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Easy to use, comprehensive features, and the progress analytics are incredibly insightful. My go-to health app."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">AL</div>
+                            <div class="author-info">
+                                <h4>Amanda Lee</h4>
+                                <p>Nutrition Specialist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>About WellnessHub</h2>
+                        <p>WellnessHub is your comprehensive health companion, designed to empower individuals to take control of their wellness journey. Our platform combines cutting-edge technology with user-friendly design to provide personalized insights and actionable recommendations.</p>
+                        <p>Founded in 2020, we've helped over a million users worldwide achieve their health goals through data-driven tracking and intelligent analytics.</p>
+                        <div class="about-stats">
+                            <div class="about-stat">
+                                <h3>1M+</h3>
+                                <p>Happy Users</p>
+                            </div>
+                            <div class="about-stat">
+                                <h3>50M+</h3>
+                                <p>Health Records</p>
+                            </div>
+                            <div class="about-stat">
+                                <h3>150+</h3>
+                                <p>Countries</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500" alt="Health and Wellness" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer" id="contact">
+            <div class="container">
+                <div class="footer-grid">
+                    <div>
+                        <h4>WellnessHub</h4>
+                        <p>Your complete health companion for tracking meals, water, exercise, sleep, and more!</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Product</h4>
+                        <p style="margin-bottom: 10px;"><a href="#features" style="color: #94a3b8; text-decoration: none;">Features</a></p>
+                        <p style="margin-bottom: 10px;"><a href="#" onclick="showAuthPage()" style="color: #94a3b8; text-decoration: none;">Get Started</a></p>
+                        <p style="margin-bottom: 10px;"><a href="#" style="color: #94a3b8; text-decoration: none;">Download</a></p>
+                    </div>
+                    <div>
+                        <h4>Company</h4>
+                        <p style="margin-bottom: 10px;"><a href="#" style="color: #94a3b8; text-decoration: none;">About Us</a></p>
+                        <p style="margin-bottom: 10px;"><a href="#" style="color: #94a3b8; text-decoration: none;">Careers</a></p>
+                        <p style="margin-bottom: 10px;"><a href="#" style="color: #94a3b8; text-decoration: none;">Blog</a></p>
+                    </div>
+                </div>
+                <div class="copyright"><p>© 2025 WellnessHub. All rights reserved.</p></div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Login/Register Page -->
+    <div id="authPage" class="hidden">
+        <div class="login-container">
+            <div class="logo">WellnessHub</div>
+            <h1 class="login-title">Health Tracker</h1>
+            <p class="subtitle">Track your meals, water, exercise, sleep, and more!</p>
+
+            <div id="authMessage"></div>
+
+            <!-- Login Form -->
+            <div id="loginForm">
+                <div class="form-group">
+                    <label for="loginUsername">Username</label>
+                    <input type="text" id="loginUsername" placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password">
+                </div>
+                <button class="btn" onclick="login()">Login</button>
+                <div class="link-text">
+                    Don't have an account? <a onclick="showRegister()">Register here</a>
+                </div>
+                <div class="link-text">
+                    <a onclick="showLandingPage()">← Back to Home</a>
+                </div>
+            </div>
+
+            <!-- Register Form -->
+            <div id="registerForm" class="hidden">
+                <div class="form-group">
+                    <label for="regUsername">Username</label>
+                    <input type="text" id="regUsername" placeholder="Choose a username">
+                </div>
+                <div class="form-group">
+                    <label for="regPassword">Password</label>
+                    <input type="password" id="regPassword" placeholder="Choose a password">
+                </div>
+                <div class="form-group">
+                    <label for="regConfirmPassword">Confirm Password</label>
+                    <input type="password" id="regConfirmPassword" placeholder="Confirm your password">
+                </div>
+                <button class="btn" onclick="register()">Register</button>
+                <div class="link-text">
+                    Already have an account? <a onclick="showLogin()">Login here</a>
+                </div>
+                <div class="link-text">
+                    <a onclick="showLandingPage()">← Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main App -->
+    <div id="mainApp" class="hidden">
+        <div class="container">
+            <!-- Header -->
+            <div class="header">
+                <h1>Health Tracker</h1>
+                <div class="header-actions">
+                    <span class="user-name" id="currentUserName"></span>
+                    <button class="btn btn-secondary btn-small" onclick="logout()">Logout</button>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="nav">
+                <button class="nav-btn active" onclick="showPage('dashboard')">Dashboard</button>
+                <button class="nav-btn" onclick="showPage('meals')">Meals</button>
+                <button class="nav-btn" onclick="showPage('water')">Water</button>
+                <button class="nav-btn" onclick="showPage('exercise')">Exercise</button>
+                <button class="nav-btn" onclick="showPage('sleep')">Sleep</button>
+                <button class="nav-btn" onclick="showPage('mood')">Mood</button>
+                <button class="nav-btn" onclick="showPage('steps')">Steps</button>
+                <button class="nav-btn" onclick="showPage('bmi')">BMI</button>
+                <button class="nav-btn" onclick="showPage('goals')">Goals</button>
+                <button class="nav-btn" onclick="showPage('summary')">Summary</button>
+                <button class="nav-btn" onclick="showPage('history')">History</button>
+            </div>
+
+            <!-- Content Area -->
+            <div class="content">
+                <div id="pageMessage"></div>
+
+                <!-- Dashboard Page -->
+                <div id="dashboard" class="page active">
+                    <h2 class="section-header">Today's Overview</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-value" id="dashMeals">0</div>
+                            <div class="stat-label">Meals Logged</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" id="dashWater">0L</div>
+                            <div class="stat-label">Water Intake</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" id="dashExercise">0</div>
+                            <div class="stat-label">Exercises</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" id="dashSleep">0h</div>
+                            <div class="stat-label">Sleep Hours</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" id="dashSteps">0</div>
+                            <div class="stat-label">Steps</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" id="dashMood">-</div>
+                            <div class="stat-label">Current Mood</div>
+                        </div>
+                    </div>
+
+                    <h2 class="section-header" style="margin-top: 40px;">Quick Access</h2>
+                    <div class="dashboard-grid">
+                        <div class="dashboard-card" onclick="showPage('meals')">
+                            <div class="dashboard-icon"><i class="fas fa-utensils"></i></div>
+                            <div class="dashboard-title">Meal Management</div>
+                            <div class="dashboard-desc">Track your daily meals and nutrition</div>
+                        </div>
+                        <div class="dashboard-card" onclick="showPage('water')">
+                            <div class="dashboard-icon"><i class="fas fa-tint"></i></div>
+                            <div class="dashboard-title">Water Tracker</div>
+                            <div class="dashboard-desc">Monitor your hydration levels</div>
+                        </div>
+                        <div class="dashboard-card" onclick="showPage('exercise')">
+                            <div class="dashboard-icon"><i class="fas fa-dumbbell"></i></div>
+                            <div class="dashboard-title">Exercise Log</div>
+                            <div class="dashboard-desc">Record workouts and activities</div>
+                        </div>
+                        <div class="dashboard-card" onclick="showPage('summary')">
+                            <div class="dashboard-icon"><i class="fas fa-chart-bar"></i></div>
+                            <div class="dashboard-title">Daily Summary</div>
+                            <div class="dashboard-desc">View comprehensive health report</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Meals Page -->
+                <div id="meals" class="page">
+                    <h2 class="section-header">Meal Management</h2>
+                    
+                    <div class="card">
+                        <h3 style="margin-bottom: 15px;">Add New Meal</h3>
+                        <div class="form-group">
+                            <label for="mealName">Meal Name</label>
+                            <input type="text" id="mealName" placeholder="e.g., Chicken Salad">
+                        </div>
+                        <div class="form-group">
+                            <label for="mealCategory">Category</label>
+                            <select id="mealCategory">
+                                <option value="breakfast">Breakfast</option>
+                                <option value="lunch">Lunch</option>
+                                <option value="dinner">Dinner</option>
+                                <option value="snack">Snack</option>
+                            </select>
+                        </div>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="mealCalories">Calories (kcal)</label>
+                                <input type="number" id="mealCalories" placeholder="0" min="0" step="0.1">
+                            </div>
+                            <div class="form-group">
+                                <label for="mealProtein">Protein (g)</label>
+                                <input type="number" id="mealProtein" placeholder="0" min="0" step="0.1">
+                            </div>
+                            <div class="form-group">
+                                <label for="mealCarbs">Carbs (g)</label>
+                                <input type="number" id="mealCarbs" placeholder="0" min="0" step="0.1">
+                            </div>
+                            <div class="form-group">
+                                <label for="mealFat">Fat (g)</label>
+                                <input type="number" id="mealFat" placeholder="0" min="0" step="0.1">
+                            </div>
+                        </div>
+                        <button class="btn" onclick="addMeal()">Add Meal</button>
+                    </div>
+
+                    <h3 style="margin: 30px 0 15px;">Today's Meals</h3>
+                    <div id="mealsList"></div>
+
+                    <div class="card" style="background: var(--secondary); color: white; border: none;">
+                        <h3 style="margin-bottom: 15px;">Daily Nutrition Summary</h3>
+                        <div class="stats-grid">
+                            <div style="text-align: center;">
+                                <div style="font-size: 2em; font-weight: bold;" id="totalCalories">0</div>
+                                <div>Total Calories</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 2em; font-weight: bold;" id="totalProtein">0g</div>
+                                <div>Total Protein</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 2em; font-weight: bold;" id="totalCarbs">0g</div>
+                                <div>Total Carbs</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 2em; font-weight: bold;" id="totalFat">0g</div>
+                                <div>Total Fat</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Water Page -->
+                <div id="water" class="page">
+                    <h2 class="section-header">Water Tracker</h2>
+                    
+                    <div class="card" style="background: var(--secondary); color: white; border: none; text-align: center;">
+                        <div style="font-size: 4em; margin-bottom: 15px;" id="waterIntake">0.0 L</div>
+                        <div style="font-size: 1.2em; opacity: 0.9;">Goal: <span id="waterGoal">2.0</span> L</div>
+                        <div class="progress-container" style="background: rgba(255,255,255,0.3); margin-top: 20px;">
+                            <div class="progress-bar" id="waterProgress" style="width: 0%; background: white; color: var(--secondary);">0%</div>
+                        </div>
+                    </div>
+
+                    <h3 style="margin: 30px 0 15px;">Quick Add</h3>
+                    <div class="quick-add-grid">
+                        <button class="quick-btn" onclick="addWater(0.25)">250ml</button>
+                        <button class="quick-btn" onclick="addWater(0.5)">500ml</button>
+                        <button class="quick-btn" onclick="addWater(0.75)">750ml</button>
+                        <button class="quick-btn" onclick="addWater(1.0)">1L</button>
+                    </div>
+
+                    <h3 style="margin: 30px 0 15px;">Custom Amount</h3>
+                    <div style="display: flex; gap: 10px;">
+                        <input type="number" id="customWater" placeholder="Enter liters" step="0.1" min="0" style="flex: 1;">
+                        <button class="btn" onclick="addCustomWater()">Add Water</button>
+                    </div>
+                </div>
+
+                <!-- Exercise Page -->
+                <div id="exercise" class="page">
+                    <h2 class="section-header">Exercise Management</h2>
+                    
+                    <div class="card">
+                        <h3 style="margin-bottom: 15px;">Add Exercise</h3>
+                        <div class="form-group">
+                            <label for="exerciseName">Exercise Name</label>
+                            <input type="text" id="exerciseName" placeholder="e.g., Running">
+                        </div>
+                        <div class="form-group">
+                            <label for="exerciseType">Type</label>
+                            <select id="exerciseType">
+                                <option value="cardio">Cardio</option>
+                                <option value="strength">Strength</option>
+                                <option value="yoga">Yoga</option>
+                                <option value="flexibility">Flexibility</option>
+                                <option value="sports">Sports</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="exerciseDuration">Duration (minutes)</label>
+                                <input type="number" id="exerciseDuration" placeholder="0" min="0" step="1">
+                            </div>
+                            <div class="form-group">
+                                <label for="exerciseCalories">Calories Burned</label>
+                                <input type="number" id="exerciseCalories" placeholder="0" min="0" step="1">
+                            </div>
+                        </div>
+                        <button class="btn" onclick="addExercise()">Add Exercise</button>
+                    </div>
+
+                    <h3 style="margin: 30px 0 15px;">Today's Exercises</h3>
+                    <div id="exerciseList"></div>
+
+                    <div class="card" style="background: var(--secondary); color: white; border: none;">
+                        <h3 style="margin-bottom: 15px;">Exercise Summary</h3>
+                        <div class="stats-grid">
+                            <div style="text-align: center;">
+                                <div style="font-size: 2em; font-weight: bold;" id="totalDuration">0</div>
+                                <div>Total Minutes</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 2em; font-weight: bold;" id="totalBurned">0</div>
+                                <div>Calories Burned</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sleep Page -->
+                <div id="sleep" class="page">
+                    <h2 class="section-header">Sleep Tracker</h2>
+                    
+                    <div class="card" style="background: var(--secondary); color: white; border: none; text-align: center;">
+                        <div style="font-size: 4em; margin-bottom: 15px;" id="sleepHours">0.0 h</div>
+                        <div style="font-size: 1.2em; opacity: 0.9;">Goal: <span id="sleepGoal">8.0</span> hours</div>
+                        <div class="progress-container" style="background: rgba(255,255,255,0.3); margin-top: 20px;">
+                            <div class="progress-bar" id="sleepProgress" style="width: 0%; background: white; color: var(--secondary);">0%</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 style="margin-bottom: 15px;">Add Sleep Hours</h3>
+                        <div class="form-group">
+                            <label for="sleepInput">Hours of Sleep</label>
+                            <input type="number" id="sleepInput" placeholder="0" min="0" max="24" step="0.5">
+                        </div>
+                        <button class="btn" onclick="addSleep()">Add Sleep</button>
+                    </div>
+
+                    <div class="card">
+                        <h3 style="margin-bottom: 15px;">Sleep Quality Assessment</h3>
+                        <div id="sleepAssessment"></div>
+                    </div>
+                </div>
+
+                <!-- Mood Page -->
+                <div id="mood" class="page">
+                    <h2 class="section-header">Mood Tracker</h2>
+                    
+                    <div class="card">
+                        <h3 style="margin-bottom: 15px;">How are you feeling today?</h3>
+                        <div class="mood-grid">
+                            <div class="mood-btn" onclick="setMood('Happy', '😊')">
+                                <div class="mood-icon">😊</div>
+                                <div class="mood-label">Happy</div>
+                            </div>
+                            <div class="mood-btn" onclick="setMood('Sad', '😢')">
+                                <div class="mood-icon">😢</div>
+                                <div class="mood-label">Sad</div>
+                            </div>
+                            <div class="mood-btn" onclick="setMood('Stressed', '😰')">
+                                <div class="mood-icon">😰</div>
+                                <div class="mood-label">Stressed</div>
+                            </div>
+                            <div class="mood-btn" onclick="setMood('Anxious', '😟')">
+                                <div class="mood-icon">😟</div>
+                                <div class="mood-label">Anxious</div>
+                            </div>
+                            <div class="mood-btn" onclick="setMood('Calm', '😌')">
+                                <div class="mood-icon">😌</div>
+                                <div class="mood-label">Calm</div>
+                            </div>
+                            <div class="mood-btn" onclick="setMood('Energetic', '⚡')">
+                                <div class="mood-icon">⚡</div>
+                                <div class="mood-label">Energetic</div>
+                            </div>
+                            <div class="mood-btn" onclick="setMood('Tired', '😴')">
+                                <div class="mood-icon">😴</div>
+                                <div class="mood-label">Tired</div>
+                            </div>
+                            <div class="mood-btn" onclick="setMood('Neutral', '😐')">
+                                <div class="mood-icon">😐</div>
+                                <div class="mood-label">Neutral</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="background: var(--secondary); color: white; border: none; text-align: center;">
+                        <h3 style="margin-bottom: 15px;">Current Mood</h3>
+                        <div style="font-size: 5em; margin: 20px 0;" id="currentMoodIcon">-</div>
+                        <div style="font-size: 1.5em;" id="currentMoodText">Not set</div>
+                    </div>
+                </div>
+
+                <!-- Steps Page -->
+                <div id="steps" class="page">
+                    <h2 class="section-header">Steps Counter</h2>
+                    
+                    <div class="card" style="background: var(--secondary); color: white; border: none; text-align: center;">
+                        <div style="font-size: 4em; margin-bottom: 15px;" id="stepsCount">0</div>
+                        <div style="font-size: 1.2em; opacity: 0.9;">Goal: <span id="stepsGoal">10000</span> steps</div>
+                        <div class="progress-container" style="background: rgba(255,255,255,0.3); margin-top: 20px;">
+                            <div class="progress-bar" id="stepsProgress" style="width: 0%; background: white; color: var(--secondary);">0%</div>
+                        </div>
+                    </div>
+
+                    <h3 style="margin: 30px 0 15px;">Quick Add</h3>
+                    <div class="quick-add-grid">
+                        <button class="quick-btn" onclick="addSteps(1000)">1,000</button>
+                        <button class="quick-btn" onclick="addSteps(2500)">2,500</button>
+                        <button class="quick-btn" onclick="addSteps(5000)">5,000</button>
+                        <button class="quick-btn" onclick="addSteps(10000)">10,000</button>
+                    </div>
+
+                    <h3 style="margin: 30px 0 15px;">Custom Amount</h3>
+                    <div style="display: flex; gap: 10px;">
+                        <input type="number" id="customSteps" placeholder="Enter steps" min="0" step="1" style="flex: 1;">
+                        <button class="btn" onclick="addCustomSteps()">Add Steps</button>
+                    </div>
+                </div>
+
+                <!-- BMI Page -->
+                <div id="bmi" class="page">
+                    <h2 class="section-header">BMI Calculator</h2>
+                    
+                    <div class="card">
+                        <h3 style="margin-bottom: 15px;">Calculate Your BMI</h3>
+                        <div class="form-group">
+                            <label for="bmiAge">Age</label>
+                            <input type="number" id="bmiAge" placeholder="Enter your age" min="1" max="120">
+                        </div>
+                        <div class="form-group">
+                            <label for="bmiWeight">Weight (kg)</label>
+                            <input type="number" id="bmiWeight" placeholder="Enter your weight" min="1" step="0.1">
+                        </div>
+                        <div class="form-group">
+                            <label for="heightUnit">Height Unit</label>
+                            <select id="heightUnit" onchange="toggleHeightInput()">
+                                <option value="meters">Meters</option>
+                                <option value="feet">Feet</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="heightMetersGroup">
+                            <label for="bmiHeightM">Height (meters)</label>
+                            <input type="number" id="bmiHeightM" placeholder="e.g., 1.75" min="0.5" max="3" step="0.01">
+                        </div>
+                        <div class="form-group hidden" id="heightFeetGroup">
+                            <label for="bmiHeightFt">Height (feet)</label>
+                            <input type="number" id="bmiHeightFt" placeholder="e.g., 5.9" min="1" max="10" step="0.1">
+                        </div>
+                        <button class="btn" onclick="calculateBMI()">Calculate BMI</button>
+                    </div>
+
+                    <div id="bmiResult"></div>
+                </div>
+
+                <!-- Goals Page -->
+                <div id="goals" class="page">
+                    <h2 class="section-header">Health Goals</h2>
+                    
+                    <div class="card">
+                        <h3 style="margin-bottom: 15px;">Set Your Daily Goals</h3>
+                        <div class="form-group">
+                            <label for="goalWater">Water Intake (Liters)</label>
+                            <input type="number" id="goalWater" placeholder="2.0" min="0" step="0.1">
+                        </div>
+                        <div class="form-group">
+                            <label for="goalCalories">Calories to Burn</label>
+                            <input type="number" id="goalCalories" placeholder="300" min="0" step="10">
+                        </div>
+                        <div class="form-group">
+                            <label for="goalExercise">Exercise Minutes</label>
+                            <input type="number" id="goalExercise" placeholder="30" min="0" step="5">
+                        </div>
+                        <div class="form-group">
+                            <label for="goalSleep">Sleep Hours</label>
+                            <input type="number" id="goalSleep" placeholder="8" min="0" max="24" step="0.5">
+                        </div>
+                        <div class="form-group">
+                            <label for="goalSteps">Daily Steps</label>
+                            <input type="number" id="goalSteps" placeholder="10000" min="0" step="100">
+                        </div>
+                        <button class="btn" onclick="saveGoals()">Save Goals</button>
+                    </div>
+
+                    <h3 style="margin: 30px 0 15px;">Current Goals</h3>
+                    <div id="currentGoals"></div>
+                </div>
+
+                <!-- Summary Page -->
+                <div id="summary" class="page">
+                    <h2 class="section-header">Daily Health Summary</h2>
+                    <div id="summaryContent"></div>
+                </div>
+
+                <!-- History Page -->
+                <div id="history" class="page">
+                    <h2 class="section-header">Health History</h2>
+                    
+                    <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                        <button class="btn" onclick="saveToHistory()">Save Today's Data</button>
+                        <button class="btn btn-danger" onclick="clearHistory()">Clear History</button>
+                    </div>
+
+                    <div id="historyContent"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Navigation between landing, auth, and main app
+        function showAuthPage() {
+            document.getElementById('landingPage').classList.add('hidden');
+            document.getElementById('authPage').classList.remove('hidden');
+            document.getElementById('mainApp').classList.add('hidden');
+        }
+
+        function showLandingPage() {
+            document.getElementById('landingPage').classList.remove('hidden');
+            document.getElementById('authPage').classList.add('hidden');
+            document.getElementById('mainApp').classList.add('hidden');
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && !href.includes('onclick')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
